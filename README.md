@@ -279,18 +279,6 @@ const serverId2 = generateUlid();
 // IDs are guaranteed unique and sortable across servers
 ```
 
-## Tree-shaking Support
-
-Import only what you need for optimal bundle size:
-
-```typescript
-// Import specific functions
-import { generateUlid } from "@digicroz/ulid/ulid";
-
-// Or import from main entry
-import { generateUlid, isValidUlid } from "@digicroz/ulid";
-```
-
 ## TypeScript Configuration
 
 For optimal compatibility, ensure your `tsconfig.json` uses modern module resolution:
