@@ -1,31 +1,28 @@
 {
   "name": "@digicroz/ulid",
   "version": "1.0.0",
-  "description": "Modern TypeScript utility library with tree-shaking support - Array, String, Number, Sleep, and Time utilities for JavaScript and TypeScript projects",
+  "description": "TypeScript ULID library with monotonic generation, binary conversion, and validation - Universally Unique Lexicographically Sortable Identifiers for JavaScript and TypeScript projects",
   "keywords": [
+    "ulid",
+    "uuid",
+    "unique-id",
+    "identifier",
+    "sortable",
+    "lexicographically-sortable",
     "typescript",
     "javascript",
-    "utilities",
-    "utility-library",
+    "monotonic",
+    "binary-conversion",
+    "crockford-base32",
+    "time-based",
+    "validation",
     "tree-shaking",
     "esm",
-    "array-utils",
-    "string-utils",
-    "number-utils",
-    "sleep",
-    "time-utils",
     "modern-js",
     "typescript-library",
-    "js-kit",
-    "functional",
-    "chunking",
-    "capitalize",
-    "clamp",
-    "async-sleep",
-    "promise-utils",
-    "browser",
-    "universal",
-    "environment-detection",
+    "id-generation",
+    "distributed-systems",
+    "database-id",
     "cross-platform"
   ],
   "type": "module",
@@ -36,26 +33,8 @@
   "typings": "./dist/index.d.ts",
   "typesVersions": {
     "*": {
-      "string": [
-        "./dist/string/index.d.ts"
-      ],
-      "array": [
-        "./dist/array/index.d.ts"
-      ],
-      "number": [
-        "./dist/number/index.d.ts"
-      ],
-      "sleep": [
-        "./dist/sleep/index.d.ts"
-      ],
-      "time": [
-        "./dist/time/index.d.ts"
-      ],
-      "utils": [
-        "./dist/utils/index.d.ts"
-      ],
-      "types": [
-        "./dist/types/index.d.ts"
+      "ulid": [
+        "./dist/ulid/index.d.ts"
       ]
     }
   },
@@ -70,61 +49,13 @@
       "default": "./dist/index.js",
       "require": "./dist/index.cjs"
     },
-    "./string": {
-      "types": "./dist/string/index.d.ts",
-      "react-native": "./dist/string/index.js",
-      "module": "./dist/string/index.js",
-      "import": "./dist/string/index.js",
-      "default": "./dist/string/index.js",
-      "require": "./dist/string/index.cjs"
-    },
-    "./array": {
-      "types": "./dist/array/index.d.ts",
-      "react-native": "./dist/array/index.js",
-      "module": "./dist/array/index.js",
-      "import": "./dist/array/index.js",
-      "default": "./dist/array/index.js",
-      "require": "./dist/array/index.cjs"
-    },
-    "./number": {
-      "types": "./dist/number/index.d.ts",
-      "react-native": "./dist/number/index.js",
-      "module": "./dist/number/index.js",
-      "import": "./dist/number/index.js",
-      "default": "./dist/number/index.js",
-      "require": "./dist/number/index.cjs"
-    },
-    "./sleep": {
-      "types": "./dist/sleep/index.d.ts",
-      "react-native": "./dist/sleep/index.js",
-      "module": "./dist/sleep/index.js",
-      "import": "./dist/sleep/index.js",
-      "default": "./dist/sleep/index.js",
-      "require": "./dist/sleep/index.cjs"
-    },
-    "./time": {
-      "types": "./dist/time/index.d.ts",
-      "react-native": "./dist/time/index.js",
-      "module": "./dist/time/index.js",
-      "import": "./dist/time/index.js",
-      "default": "./dist/time/index.js",
-      "require": "./dist/time/index.cjs"
-    },
-    "./utils": {
-      "types": "./dist/utils/index.d.ts",
-      "react-native": "./dist/utils/index.js",
-      "module": "./dist/utils/index.js",
-      "import": "./dist/utils/index.js",
-      "default": "./dist/utils/index.js",
-      "require": "./dist/utils/index.cjs"
-    },
-    "./types": {
-      "types": "./dist/types/index.d.ts",
-      "react-native": "./dist/types/index.js",
-      "module": "./dist/types/index.js",
-      "import": "./dist/types/index.js",
-      "default": "./dist/types/index.js",
-      "require": "./dist/types/index.cjs"
+    "./ulid": {
+      "types": "./dist/ulid/index.d.ts",
+      "react-native": "./dist/ulid/index.js",
+      "module": "./dist/ulid/index.js",
+      "import": "./dist/ulid/index.js",
+      "default": "./dist/ulid/index.js",
+      "require": "./dist/ulid/index.cjs"
     }
   },
   "files": [
@@ -133,11 +64,11 @@
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/digicroz/js-kit.git"
+    "url": "https://github.com/digicroz/ulid.git"
   },
-  "homepage": "https://github.com/digicroz/js-kit#readme",
+  "homepage": "https://github.com/digicroz/ulid#readme",
   "bugs": {
-    "url": "https://github.com/digicroz/js-kit/issues"
+    "url": "https://github.com/digicroz/ulid/issues"
   },
   "author": {
     "name": "Adarsh Hatkar",
@@ -158,7 +89,7 @@
     "release:patch": "npm version patch",
     "postversion": "git push && git push --tags && npm publish",
     "link": "npm run build && npm link",
-    "unlink": "npm unlink -g @digicroz/js-kit"
+    "unlink": "npm unlink -g @digicroz/ulid"
   },
   "devDependencies": {
     "@types/node": "^24.3.0",
