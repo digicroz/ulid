@@ -1,1 +1,1 @@
-"@digicroz/js-kit": "file:C:/DigiCrozRepos/npmPackages/js-kit",
+"@digicroz/ulid": "file:C:/DigiCrozRepos/npmPackages/ulid",
